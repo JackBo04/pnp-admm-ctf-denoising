@@ -119,7 +119,7 @@ signal_retention = ||z||² / ||y||² × 100%
 - ρ=10时达到99.99996%的改善
 - 但ρ过大可能导致过度平滑，需要在ratio和signal retention间平衡
 
-![rho扫描结果](./experiments/results/exp_a_rho_scan/rho_scan_summary.png)
+![rho扫描结果](./figures/rho_scan_summary.png)
 
 ### 3.2 去噪器对比实验
 
@@ -143,7 +143,7 @@ signal_retention = ||z||² / ||y||² × 100%
 - Topaz UNet 最慢（44.92秒 vs 8-10秒）
 - Identity 最差（ratio=0.048），说明去噪器先验的重要性
 
-![去噪器对比](./experiments/results/exp_d_denoiser_comparison/denoiser_comparison.png)
+![去噪器对比](./figures/denoiser_comparison.png)
 
 ### 3.3 多去噪器T扫描实验
 
@@ -171,7 +171,7 @@ signal_retention = ||z||² / ||y||² × 100%
 - Topaz UNet T=5时ratio最佳(0.00078)，但signal retention最低(9.92%)
 - Lowpass 0.3在ratio和signal retention间取得较好平衡
 
-![多去噪器对比](./experiments/results/multi_denoiser_T_512_left/metrics_comparison.png)
+![多去噪器对比](./figures/metrics_comparison.png)
 
 ---
 
@@ -272,15 +272,15 @@ class IdealHxDenoiser:
 
 **各方法对比网格**:
 
-![合成实验对比网格](./experiments/synthetic_ctf_aware/synthetic_analysis/comparison_grid.png)
+![合成实验对比网格](./figures/comparison_grid.png)
 
 **方法对比总结**:
 
-![合成实验总结](./experiments/synthetic_ctf_aware/synthetic_analysis/summary_comparison.png)
+![合成实验总结](./figures/summary_comparison.png)
 
 **迭代次数分析**:
 
-![迭代对比](./experiments/synthetic_ctf_aware/synthetic_analysis/iteration_comparison/iteration_comparison_fixed.png)
+![迭代对比](./figures/iteration_comparison_fixed.png)
 
 ---
 
